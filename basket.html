@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Digi Kala online store">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> خزید </title>
-	<link rel="stylesheet" type="text/css" href="basket.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script defer src="js/all.min.js"></script>
     
@@ -17,14 +18,11 @@
 				<div class="row">
          <div class="col-lg-8 col-md-6">
 			<img src="images/logo.png" class="logo">
-			<form class="example" action="/action_page.php">
-				<input type="text" placeholder="جستجو در دیجی کالا" name="search2">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			</form>
+			
 		</div>
 	</div>
 </div>
-            <button class="btn"><i class="fa fa-home"></i> ورود به حساب کاربری</button>
+            <button type="button" class="btn"><i class="fa fa-home"></i> ورود به حساب کاربری</button>
 
 		</div>
 
@@ -32,7 +30,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
 
-		<button class="navbar-toggler" data-target="#mynav" data-toggle="collapse">
+		<button  type="button" class="navbar-toggler" data-target="#mynav" data-toggle="collapse">
 			<i class="fas fa-bars"></i>
 
 		</button>
@@ -59,13 +57,13 @@
 		<div class="container">
 			<div class="row">
 
-		<div class= "col-lg-3 col-md-6 col-12 mb-5 mt-3" >
+		<div class= "col-lg-12 col-md-12 col-12 mb-5 mt-3" >
 			<div class="basket">
 				<img src="images/images (5).jpg" alt="image">
 				<p>Redmi note 10 pro</p>
 				<p> 4,799,000 $</p>
 				<!--<a id="1" href="#"> خرید </a>-->
-				<button id="1" onclick="goTobasket()"> خرید </button>
+				<button class="buy-btn" type="button" id="1" onclick="goTobasket()"> خرید </button>
 
 			</div>
 
@@ -78,7 +76,7 @@
 	</div>
 	    <script src="js/jquery-3.4.1.slim.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="./basket.js"></script>
+		<script src="js/basket.js"></script>
  
     
 </body>

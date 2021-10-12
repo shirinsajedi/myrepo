@@ -1,0 +1,159 @@
+$color-primery:rgb(216, 178, 208);
+$color-secend :rgb(121, 211, 184);
+$color-third:#f02f2f;
+
+
+.header {
+    max-width:1360px;
+    height: 60px;
+    background-color: #fff;
+  }
+  /*-------------------BODY---------------------------*/
+  body {
+    background-color:#fff;
+    color: #f02f2f;
+    font-size: 15px;
+
+  }
+  .logo {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-right: 5px;
+  }
+    form.example input[type="text"] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
+    form.example {
+      margin-top: 10px;
+      margin-right: 10px;
+      max-width: 300px;
+      float: right;
+    }
+    
+    form.example button {
+      float: right;
+      width: 20%;
+      padding: 10px;
+      background: #2196f3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
+    
+    form.example button:hover {
+      background: #0b7dda;
+    }
+    
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    /* ------------------BUTTONS-------------------------- */
+    
+    .btn {
+      background-color: #dcdee0;
+      border: none;
+      color: #6e6a69;
+      padding: 14px 28px;
+      cursor: pointer;
+      float: left;
+      margin: 10px 20px;
+      border-radius: 20px;
+    }
+    .btn:hover {
+      background-color: #aeb3b8;
+    }
+    /* ------------------NAVIGATION BAR-------------------------- */
+  
+  .main-nav {
+    margin-top: 10px;
+  }
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  .main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .main-nav li {
+    float: right;
+  }
+  
+  .main-nav li a {
+    display: block;
+    color: #6e6a69;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .a-main-nav {
+    float: left;
+    text-decoration: none;
+    margin: 20px 20px;
+  }
+  .basket{
+    width: 300px;
+    height: 400px;
+    
+    background-color:#fff;
+    border: 1px solid #aeb3b8;
+
+    p{
+      color:$color-primery;
+    font-size: large;
+    text-align: center;
+
+    }
+    .buy-btn{
+      font-size: x-large;
+      color:$color-secend;
+      display: block;
+      margin:auto;
+      
+      
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      text-decoration: none;
+      text-align: center;
+      &:hover{
+        
+        font-size: 30px;
+        transition: 0.5s;
+
+      }
+
+    }
+    
+  
+  }
+  
+  
+  
+
+
+
+
+
+    
