@@ -19,6 +19,10 @@ body {
   font-size: 15px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 100%;
   background-color: #fff;
@@ -31,11 +35,61 @@ body {
   box-shadow: #6e6a69;
 }
 
+.to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #438ecc;
+  color: #111;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.to-top.active {
+  opacity: 1;
+}
+
 .logo {
   width: 150px;
   height: auto;
   float: right;
   margin-right: 5px;
+}
+
+.user {
+  display: block;
+  position: relative;
+  width: 250px;
+  float: left;
+  text-align: center;
+  top: 15px;
+  text-decoration: none;
+  color: #782b7a;
+  border: 1px solid #782b7a;
+  background-color: #f5d4f7;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.user:hover {
+  background-color: #e9bde5;
+  text-decoration: none;
 }
 
 /*----------------- the Style of search field-------- */

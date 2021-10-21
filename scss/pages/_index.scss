@@ -1,80 +1,131 @@
 $color-primery:rgb(216, 178, 208);
 $color-secend :rgb(121, 211, 184);
 $color-third:#f02f2f;
-
 @mixin buy {
-  text-decoration: none;
-      text-align: center;
-      font-size: 15px;
-      color: #f02f2f;
-      border: 1px solid $color-primery;
-      border-radius: 10px;
-      box-shadow:1px #6e6a69 ;
-      padding: 5px;
-      background-color:#d3c7c5;
-      
-  
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    color: #f02f2f;
+    border: 1px solid $color-primery;
+    border-radius: 10px;
+    box-shadow: 1px #6e6a69;
+    padding: 5px;
+    background-color: #d3c7c5;
 }
-
 
 @font-face {
     font-family: Lato;
     src: url("fonts/Lato-black.ttf");
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: Lato-Black;
     src: url('fonts/Lato-Black.ttf');
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: Lato-Italic;
     src: url('fonts/Lato-Italic.ttf');
-  }
-  body{
-    background-color:#fff;
+}
+
+body {
+    background-color: #fff;
     color: #f02f2f;
     font-size: 15px;
-
 }
-  .container{
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
     max-width: 100%;
-    background-color:#fff;
-  }
-  
+    background-color: #fff;
+}
 
 .header {
-    max-width:1360px;
+    max-width: 1360px;
     height: 60px;
-    background-color:#fff;
+    background-color: #fff;
     box-shadow: #6e6a69;
-  }
+}
 
+.to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #438ecc;
+    color: #111;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
 
+.to-top.active {
+    opacity: 1;
+}
 
-  .logo {
+.logo {
     width: 150px;
     height: auto;
     float: right;
     margin-right: 5px;
-  }
-  /*----------------- the Style of search field-------- */
-  form.example input[type="text"] {
+}
+
+.user {
+    display: block;
+    position: relative;
+    width: 250px;
+    float: left;
+    text-align: center;
+    top: 15px;
+    text-decoration: none;
+    color: #782b7a;
+    border: 1px solid #782b7a;
+    background-color: #f5d4f7;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 18px;
+    padding: 5px;
+    &:hover {
+        background-color: #e9bde5;
+        text-decoration: none;
+    }
+}
+
+
+/*----------------- the Style of search field-------- */
+
+form.example input[type="text"] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
     width: 80%;
     background: $color-primery;
-  }
-  form.example {
+}
+
+form.example {
     margin-top: 10px;
     margin-right: 10px;
     max-width: 300px;
     float: right;
-  }
-  
-  form.example button {
+}
+
+form.example button {
     float: right;
     width: 20%;
     padding: 10px;
@@ -84,36 +135,38 @@ $color-third:#f02f2f;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
-  }
-  
-  form.example button:hover {
+}
+
+form.example button:hover {
     background: #0b7dda;
-  }
-  
-  form.example::after {
+}
+
+form.example::after {
     content: "";
     clear: both;
     display: table;
-  }
-  /* ------------------BUTTONS-------------------------- */
-  .section-btn{
-    width: 100%;
-     height: 15vh; 
-     background-color: #5b168a;
-     bottom: 10%; 
-    border-radius: 25px;
-    a{
-      color:$color-primery;
-      font-size: 40px;
-      &:hover{
-        
-        color: $color-secend;
-        text-decoration: none;
-      }
-    }
-  }
+}
 
-  .btn {
+
+/* ------------------BUTTONS-------------------------- */
+
+.section-btn {
+    width: 100%;
+    height: 15vh;
+    background-color: #5b168a;
+    bottom: 10%;
+    border-radius: 25px;
+    a {
+        color: $color-primery;
+        font-size: 40px;
+        &:hover {
+            color: $color-secend;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn {
     background-color: #dcdee0;
     border: none;
     color: #6e6a69;
@@ -122,102 +175,107 @@ $color-third:#f02f2f;
     float: left;
     margin: 10px 20px;
     border-radius: 20px;
-  }
-  .btn:hover {
-    background-color: #aeb3b8;
-  }
+}
 
-  
-  .main-nav {
+.btn:hover {
+    background-color: #aeb3b8;
+}
+
+.main-nav {
     margin-top: 10px;
-  }
-  div.sticky {
+}
+
+div.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-  }
-  
-  .main-nav ul {
+}
+
+.main-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #fff;
-  }
-  
-  .main-nav li {
+}
+
+.main-nav li {
     float: right;
-  }
-  
-  .main-nav li a {
+}
+
+.main-nav li a {
     display: block;
     color: #6e6a69;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
-  }
-  
-  .sticky {
+}
+
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  .a-main-nav {
+}
+
+.a-main-nav {
     float: left;
     text-decoration: none;
     margin: 20px 20px;
-  }
-  .card-title{
-    .off{
-      font-size: 20px;
-      text-decoration: none;
+}
+
+.card-title {
+    .off {
+        font-size: 20px;
+        text-decoration: none;
     }
-    .price{
-      font-size: 20px;
-      text-decoration: none;
+    .price {
+        font-size: 20px;
+        text-decoration: none;
     }
-    a{
-      font-size: 20px;
-      color: $color-primery;
-      text-decoration: none;
+    a {
+        font-size: 20px;
+        color: $color-primery;
+        text-decoration: none;
     }
-  }
-  .text-muted{
-    a{
-      text-decoration: none;
-      background-color:rgb(182, 4, 4); 
-      color: antiquewhite;
+}
+
+.text-muted {
+    a {
+        text-decoration: none;
+        background-color: rgb(182, 4, 4);
+        color: antiquewhite;
     }
-  }
-  .card-2{
+}
+
+.card-2 {
     border-radius: 20px;
     box-shadow: #6e6a69;
-  }
-  .card-title-2 {
+}
+
+.card-title-2 {
     font-size: 15px;
     text-align: center;
-
-    a{
-      text-decoration: none; 
-       color: rgb(235, 99, 36);
-
+    a {
+        text-decoration: none;
+        color: rgb(235, 99, 36);
     }
-  }
-  .card-title-3{
-    .buy{
-      @include buy;
+}
+
+.card-title-3 {
+    .buy {
+        @include buy;
     }
-      
-      
-  }
-  .text-footer {
+}
+
+.text-footer {
     font-size: 50px;
     text-align: center;
     background-color: #0b7dda;
-  }
-  .icon {
+}
+
+.icon {
     font-size: larger;
-  }
-  /* ------------------MAIN-SLIDE SECTION-------------------------- */
-  
-  
+}
+
+
+/* ------------------MAIN-SLIDE SECTION-------------------------- */
