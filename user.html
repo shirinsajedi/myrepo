@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Digi Kala online store">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title> users</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/user.css">
     <script defer src="js/all.min.js"></script>
@@ -16,7 +17,7 @@
 
     <div class="form-control">
         <p>ثبت نام</p>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <form name="myForm" action="https://jsonplaceholder.typicode.com/posts" onsubmit="return validateForm()" method="post">
 
             <label for="user">name:</label><br>
             <input type="text" id="user" name="name" placeholder="jack"><br>
