@@ -1,8 +1,11 @@
-function validateForm() {
-    let x = document.forms["myForm"]["name"].value;
-    if (x == "") {
-        document.getElementById("user").style.background = "rgb(241, 76, 76)";
-
-        return false;
+function showHide() {
+    var toggle = document.querySelector(".toggle");
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+        toggle.classList.add("hide");
+    } else {
+        x.type = "password";
+        toggle.classList.remove("hide");
     }
 }

@@ -1,23 +1,152 @@
+body {
+    background: url('../images/signup-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(95, 93, 93);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+}
+
 .form-control {
-    position: relative;
-    top: 100px;
-    right: -40%;
-    width: 300px;
-    height: 300px;
-    background-color: bisque;
-    border: 1px solid rgba(241, 7, 230, 0.904);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    width: 700px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-p {
+h3 {
     text-align: center;
+    color: black;
+    margin: 40px;
 }
 
-.form-btn {
-    width: 50%;
-    margin-left: 50px;
+.form-control #name {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 15%;
+    outline: none;
+}
+
+.form-control #email {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 15%;
+    outline: none;
+}
+
+.form-control #password {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 15%;
+    outline: none;
+}
+
+.password {
+    position: relative;
+}
+
+.fa-eye {
+    display: none;
+    right: 10px;
+}
+
+.toggle {
+    position: absolute;
+    right: 80px;
+    top: 40px;
+}
+
+.toggle svg {
+    position: absolute;
+    cursor: pointer;
+}
+
+.hihe .fa-eye-slash {
+    display: none;
+}
+
+.form-control #password2 {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 15%;
+    outline: none;
+}
+
+.checkbox {
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: rgb(95, 93, 93);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(95, 93, 93);
+}
+
+.btn {
+    width: 70%;
+    height: 45px;
+    margin: 50px 15%;
+    color: #fff;
+    background-image: linear-gradient(to left, #74ebd5, #9face6);
+    outline: none;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.paragraf2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login {
+    color: black;
+}
+
+.login:hover {
+    color: black;
 }
