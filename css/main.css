@@ -411,9 +411,16 @@ div.sticky {
   transition: 0.5s;
 }
 
-body {
-  background-color: aquamarine;
-  color: red;
-  font-size: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+head {
+  width: 1170px;
+  height: 8vh;
 }
 /*# sourceMappingURL=main.css.map */
