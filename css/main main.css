@@ -86,6 +86,11 @@ section {
   list-style-type: none;
 }
 
+.card {
+  width: 100%;
+  height: auto;
+}
+
 .card .card-img-top {
   width: 100%;
 }
@@ -101,6 +106,8 @@ section {
 }
 
 .card .card-body {
+  padding: 30px;
+  position: relative;
   /* Next & previous buttons */
   /* Position the "next button" to the right */
   /* On hover, add a black background color with a little bit see-through */
@@ -114,7 +121,6 @@ section {
 .card .card-body .card-text {
   font-size: 15px;
   color: #717171;
-  width: 100%;
 }
 
 .card .card-body a {
